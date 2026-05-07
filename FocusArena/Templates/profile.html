@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="/static/images/logo.png">
+        </div>
+        
+        <a href="/dashboard" class="icon-btn">
+    <i data-lucide="house"></i>
+</a>
+
+<a href="/leaderboard_page" class="icon-btn">
+    <i data-lucide="trophy"></i>
+</a>
+
+<a href="/profile" class="icon-btn">
+    <i data-lucide="user"></i>
+</a>
+
+<a href="/settings" class="icon-btn">
+    <i data-lucide="settings-2"></i>
+</a>
+    </aside>
+
+    <main class="main-area">
+
+        <div class="topbar">
+            <h2>Profile</h2>
+        </div>
+
+        <div class="profile-layout">
+
+            <div class="panel profile-card">
+                <img id="profileAvatar" class="profile-avatar" src="">
+                <input type="file" id="avatarInput">
+                <button onclick="uploadAvatar()">Upload</button>
+            </div>
+
+            <div class="panel">
+                <div id="profileInfo"></div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="/static/js/profile.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>

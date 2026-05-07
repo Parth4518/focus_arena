@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/leaderboard_page">Leaderboard</a>
+    <a href="/profile">Profile</a>
+</nav>
+
+<div class="card">
+    <h2>Session Summary</h2>
+    <div id="summaryBox"></div>
+</div>
+
+<script>
+const data = JSON.parse(localStorage.getItem("lastSession"));
+document.getElementById("summaryBox").innerHTML =
+`Time: ${data.minutes} min<br>
+Pauses: ${data.pauses}<br>
+Score: ${data.score}`;
+</script>
+
+</body>
+</html>
