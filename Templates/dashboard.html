@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FocusArena</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="/static/images/logo.png">
+        </div>
+
+        <a href="/dashboard" class="icon-btn active">
+            <i data-lucide="house"></i>
+        </a>
+
+        <a href="/leaderboard_page" class="icon-btn">
+            <i data-lucide="trophy"></i>
+        </a>
+
+        <a href="/profile" class="icon-btn">
+            <i data-lucide="user"></i>
+        </a>
+
+        <a href="/settings" class="icon-btn">
+            <i data-lucide="settings-2"></i>
+        </a>
+    </aside>
+
+    <main class="main-area">
+
+        <div class="topbar">
+
+            <div>
+                <div class="eyebrow">FocusArena</div>
+                <h2 id="greeting">Good to see you</h2>
+            </div>
+
+            <div class="top-right">
+                <div class="streak-badge" id="streakBadge">
+                    0 day streak
+                </div>
+
+                <div class="top-user">
+                    <img id="topAvatar" class="avatar" src="">
+                    <span id="topUsername"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <section class="panel timer-panel">
+                <div class="mini-label">Focus Session</div>
+
+                <div id="timer">00:00</div>
+
+                <div class="button-row">
+                    <button onclick="startTimer()">Start</button>
+                    <button onclick="pauseTimer()">Pause</button>
+                    <button onclick="endSession()">End</button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h3>Today</h3>
+
+                <div class="stat-item">
+                    <span>Focus time</span>
+                    <strong id="liveTime">0 min</strong>
+                </div>
+
+                <div class="stat-item">
+                    <span>Pauses</span>
+                    <strong id="livePauses">0</strong>
+                </div>
+
+                <div class="stat-item">
+                    <span>Momentum score</span>
+                    <strong id="liveScore">0</strong>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h3>Mission</h3>
+
+                <div class="mission">
+                    Reach 30 minutes today
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div class="status-box" id="stats">
+                    Ready to focus.
+                </div>
+            </section>
+
+        </div>
+
+        <div class="panel timeline-panel">
+
+            <div class="timeline-header">
+                <h3>Recent momentum</h3>
+            </div>
+
+            <div class="timeline" id="timeline">
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="/static/js/dashboard.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>

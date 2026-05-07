@@ -1,0 +1,91 @@
+{
+  "parth": {
+    "password": "123",
+    "profile": {
+      "avatar": "/static/uploads/parth_create_an_image_of_a_hm.png",
+      "accent": "#a855f7"
+    },
+    "stats": {
+      "streak": 0
+    },
+    "sessions": [
+      {
+        "minutes": 0,
+        "pauses": 1,
+        "score": 5
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 1,
+        "score": 5
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 2,
+        "pauses": 0,
+        "score": 14
+      },
+      {
+        "minutes": 0,
+        "pauses": 1,
+        "score": 5
+      }
+    ]
+  },
+  "rakshit": {
+    "password": "1234",
+    "profile": {
+      "avatar": "/static/uploads/rakshit_ChatGPT_Image_Oct_10_2025_12_48_25_PM_11zon.jpg",
+      "accent": "#38bdf8"
+    },
+    "stats": {
+      "streak": 0
+    },
+    "sessions": [
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 1,
+        "score": 5
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      },
+      {
+        "minutes": 0,
+        "pauses": 0,
+        "score": 10
+      }
+    ]
+  }
+}
